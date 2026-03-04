@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapunzel Image Gallery</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<h2 class="title">Tangled Image Gallery </h2>
+
+<div class="filters">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('rapunzel')">Rapunzel</button>
+  <button onclick="filterImages('flynn')">Flynn Rider</button>
+  <button onclick="filterImages('gothel')">Mother Gothel</button>
+</div>
+
+<div class="gallery">
+  <!-- Rapunzel -->
+  <img src="https://wallpapers.com/images/hd/rapunzel-pictures-j4wexmba7ra9h0el.jpg" data-category="rapunzel" onclick="openLightbox(0)">
+  <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/rapunzel-painting-in-tangled-cropped.jpg?w=1600&h=900&fit=crop" data-category="rapunzel" onclick="openLightbox(1)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mUSzmywZD3a9dZdR_WoYyNHU2E9OBoBQIg&s" data-category="rapunzel" onclick="openLightbox(2)">
+
+  <!-- Flynn Rider -->
+  <img src="https://www.everythingmouse.com/wp-content/uploads/2021/02/flynnridertangled.jpeg" data-category="flynn" onclick="openLightbox(3)">
+  <img src="https://i.ytimg.com/vi/pK7UA1B-PSA/maxresdefault.jpg" data-category="flynn" onclick="openLightbox(4)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcTpoDo3me3IiiybTAVCPdMOJg2S18FygT9SrFi087JVihpN62wuq0TI62Eh8Ee__PWBLUs6XLZLvwtqoLmR3YBnxvwpg6BDYBNDOQQ&s=10" data-category="flynn" onclick="openLightbox(5)">
+
+  <!-- Mother Gothel -->
+  <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Gothel.png" data-category="gothel" onclick="openLightbox(6)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-cGDJXcTWQlDYmvnRlH97YSpN_e_5A3T0QYD-I2CNEaLH-y47F7_suxaCO6IOxl-8-rG21somdakjbtWN2XMjrzVRoNl6xN970X33A&s=10" data-category="gothel" onclick="openLightbox(7)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJExqvxhKZF_6t1ArTvxxEpfYxCC0kif9irA&s" data-category="gothel" onclick="openLightbox(8)">
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="close" onclick="closeLightbox()">✖</button>
+  <button class="prev" onclick="prevImage()">⟨</button>
+  <img id="lightbox-img">
+  <button class="next" onclick="nextImage()">⟩</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
